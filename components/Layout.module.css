@@ -1,0 +1,68 @@
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  flex-shrink: 0;
+  width: 100%;
+  padding: 20px 8%;
+  background: #123b50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #8ee3d0;
+}
+
+.main {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  flex-shrink: 0;
+  width: 100%;
+  margin-top: auto;
+  padding: 20px;
+  background: #123b50;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav {
+    gap: 18px;
+  }
+}
